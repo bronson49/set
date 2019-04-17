@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport"
+         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>rabbit</title>
+
+   <style>
+      *{box-sizing: border-box} body{background: grey; margin: 0}
+      .main {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-auto-rows: minmax(50px, auto);
+         border: 2px solid black;
+         height: 100vh;
+      }
+      .main div {
+         border: 1px solid red;
+         font-size: 40px;
+      }
+      .one{
+         grid-column: 1 / 3;
+         grid-row: 1 / 4;
+      }
+      .two{
+         grid-column: 3 / 3;
+         grid-row: 1 / 5;
+      }
+      .three{
+         grid-column: 1 / 1;
+         grid-row: 4 / 7;
+      }
+      .four{
+         /*grid-column: 2 / 2;*/
+         /*grid-row: 4 / 6;*/
+      }
+      .five{
+         grid-column: 1 / 1;
+         grid-row: 7 / 11;
+      }
+      .six {
+         grid-column: 2 / 4;
+         grid-row: 5 / 11;
+      }
+   </style>
+
+</head>
+<body>
+<div class="main">
+   <div style="background:#1d841c;" class="one">1</div>
+   <div style="background:#9e161b;" class="two">2</div>
+   <div style="background:#2d329a;" class="three">3</div>
+   <div style="background:#9e149c;" class="four">4</div>
+   <div style="background:#8a8711;" class="five">5</div>
+   <div style="background:#14a299;" class="six">6</div>
+</div>
+
+</body>
+</html>
